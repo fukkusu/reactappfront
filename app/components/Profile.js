@@ -7,6 +7,7 @@ import ProfilePosts from "./ProfilePosts";
 import { useImmer } from "use-immer";
 import ProfileFollowers from "./ProfileFollowers";
 import ProfileFollowing from "./ProfileFollowing";
+import NotFound from "./NotFound";
 
 function Profile() {
   const { username } = useParams();
@@ -20,7 +21,8 @@ function Profile() {
       profileAvatar: "https://utfs.io/f/aRfQoGrTqkRI7UcDQHKdrgOJlQSx4TnRsiNfVa0BCz9yU1oK?",
       isFollowing: false,
       counts: { postCount: "", followerCount: "", followingCount: "" }
-    }
+    },
+    notFound: false
   });
 
   useEffect(() => {
@@ -28,9 +30,16 @@ function Profile() {
     async function fetchData() {
       try {
         const response = await Axios.post(`/profile/${username}`, { token: appState.user.token });
-        setState(draft => {
-          draft.profileData = response.data;
-        });
+        if (!response.data) {
+          setState(draft => {
+            draft.notFound = true;
+          });
+        } else {
+          setState(draft => {
+            draft.notFound = false;
+            draft.profileData = response.data;
+          });
+        }
       } catch (e) {
         console.log("There was an error or the request was cancelled.");
       }
@@ -102,6 +111,10 @@ function Profile() {
     setState(draft => {
       draft.stopFollowingRequestCount++;
     });
+  }
+
+  if (state.notFound) {
+    return <NotFound />;
   }
 
   return (
