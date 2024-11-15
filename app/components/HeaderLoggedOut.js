@@ -112,7 +112,7 @@ function HeaderLoggedOut(props) {
           </CSSTransition>
         </div>
         <div className="col-md mr-0 pr-md-0 mb-3 mb-md-0">
-          <input onChange={e => dispatch({ type: "passwordEntered", value: e.target.value })} name="password" className="form-control form-control-sm input-dark" type="password" placeholder="Password" />
+          <input onChange={e => dispatch({ type: "passwordEntered", value: e.target.value })} name="password" className={"form-control form-control-sm input-dark " + (state.password.isToFill ? "is-invalid" : "")} type="password" placeholder="Password" />
 
           <CSSTransition in={state.password.isToFill} timeout={330} classNames="liveValidateMessage" unmountOnExit>
             <div
