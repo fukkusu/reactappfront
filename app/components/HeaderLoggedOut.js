@@ -95,7 +95,7 @@ function HeaderLoggedOut(props) {
   return (
     <form onSubmit={handleSubmit} className="mb-0 pt-2 pt-md-0">
       <div className="row align-items-center">
-        <div className="col-md mr-0 pr-md-0 mb-3 mb-md-0">
+        <div className="col-md mr-0 pr-md-0 mb-5 mb-md-0">
           <input onChange={e => dispatch({ type: "usernameEntered", value: e.target.value })} name="username" className={"form-control form-control-sm input-dark " + (state.username.isToFill ? "is-invalid" : "")} type="text" placeholder="Username" autoComplete="off" />
 
           <CSSTransition in={state.username.isToFill} timeout={330} classNames="liveValidateMessage" unmountOnExit>
@@ -111,7 +111,7 @@ function HeaderLoggedOut(props) {
             </div>
           </CSSTransition>
         </div>
-        <div className="col-md mr-0 pr-md-0 mb-3 mb-md-0">
+        <div className="col-md mr-0 pr-md-0 mb-5 mb-md-0">
           <input onChange={e => dispatch({ type: "passwordEntered", value: e.target.value })} name="password" className={"form-control form-control-sm input-dark " + (state.password.isToFill ? "is-invalid" : "")} type="password" placeholder="Password" />
 
           <CSSTransition in={state.password.isToFill} timeout={330} classNames="liveValidateMessage" unmountOnExit>

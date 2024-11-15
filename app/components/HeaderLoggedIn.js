@@ -35,7 +35,7 @@ function HeaderLoggedIn(props) {
         <img className="small-header-avatar" src={appState.user.avatar} />
       </Link>
       <Tooltip place="bottom" id="profile" className="custom-tooltip" />{" "}
-      <Link className="btn btn-sm btn-success mr-2" to="/create-post">
+      <Link className="btn btn-sm btn-success mr-2 white" to="/create-post">
         Create Post
       </Link>{" "}
       <button onClick={handleLogout} className="btn btn-sm btn-secondary">
