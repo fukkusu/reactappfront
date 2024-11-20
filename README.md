@@ -51,7 +51,16 @@ Ensure you have the following installed:
    ```bash
    npm run start
    ```
+### Checking the output before pushing changes: previewDist
 
+1. Save changes to files
+2. Preview the dist file:
+   ```bash
+   npm run previewDist
+   ```
+3. Check output on localhost:4000
+
+### The Backend
 The backend is here: [backend](https://github.com/fukkusu/reactapp)
 
 ---
