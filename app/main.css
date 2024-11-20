@@ -3,13 +3,14 @@ body {
   }
 
 footer {
-    position: fixed;
-    bottom: 0px;
+    position: absolute;
+    bottom: -88px;
     left: 0;
     right: 0;
     background-color: #fff;
     z-index: 999;
   }
+
 
   .bg-primary {
     background-color: #292929 !important;

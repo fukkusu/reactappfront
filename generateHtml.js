@@ -30,11 +30,6 @@ const startOfHTML = `<!DOCTYPE html>
       <title>ReactApp</title>
 
       <link href="images/favicon.ico" rel="icon">
-      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
-      <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-512x512.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
       <link href="https://fonts.googleapis.com/css?family=Public+Sans:300,400,400i,700,700i&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
       <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
