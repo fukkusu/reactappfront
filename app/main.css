@@ -2,6 +2,13 @@ body {
     font-family: "Public Sans", sans-serif;
   }
 
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+
   .bg-primary {
     background-color: #292929 !important;
   }
