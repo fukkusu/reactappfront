@@ -1,5 +1,3 @@
-Here’s a sample README file tailored for the **"React for the Rest of Us"** project:
-
 ---
 
 # React for the Rest of Us: Learning React Through Practical Projects
@@ -9,11 +7,10 @@ Welcome to the **React for the Rest of Us** project! This repository contains co
 ---
 
 ## 🛠️ Features
-- Understand React components and their lifecycle.
-- Build real-world applications with React hooks.
-- Learn JSX, state management, and props.
-- Implement routing, forms, and API integration.
-- Develop a responsive and interactive user interface.
+- Sign up form
+- Log in to publish messages to a board
+- Follow other members
+- Live chat feature
 
 ---
 
@@ -52,13 +49,8 @@ Ensure you have the following installed:
    ```
 4. Start the development server:
    ```bash
-   npm start
+   npm run start
    ```
-
----
-
-## 🎨 Customization
-Feel free to modify the code and customize it to match your own project requirements. The course encourages experimentation and learning by doing!
 
 ---
 
@@ -69,13 +61,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🌟 Acknowledgments
 A special thanks to **Brad Schiff** for creating this course. Check out the [Udemy course page](https://www.udemy.com/course/react-for-the-rest-of-us/) to learn more about this project and the concepts covered.
-
----
-
-## 📧 Contact
-For questions or feedback, feel free to reach out:
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- GitHub: [Your GitHub Profile](https://github.com/your-username)
 
 ---
 
