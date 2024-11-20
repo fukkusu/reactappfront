@@ -4,9 +4,11 @@ body {
 
 footer {
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     left: 0;
     right: 0;
+    background-color: #fff;
+    z-index: 999;
   }
 
   .bg-primary {
